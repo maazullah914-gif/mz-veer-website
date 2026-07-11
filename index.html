@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>MZ VEER</title>
-    <style>
-        body{
-            background:#111;
-            color:white;
-            text-align:center;
-            font-family:Arial;
-            margin-top:100px;
-        }
-        h1{
-            color:#00bfff;
-        }
-    </style>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MZ VEER</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<h1>MZ VEER</h1>
+<div class="card">
 
-<p id="text"></p>
+    <img src="logo.png" class="logo">
 
-<script>
+    <h1>MZ VEER</h1>
 
-const params = new URLSearchParams(window.location.search);
+    <p id="message">
 
-document.getElementById("text").innerHTML =
-params.get("text") || "Welcome";
+        Welcome To My Website
 
-</script>
+    </p>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
