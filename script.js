@@ -4,10 +4,20 @@ const text = params.get("text");
 
 const message = document.getElementById("message");
 
-if (message) {
-    if (text) {
-        message.innerText = decodeURIComponent(text);
-    } else {
-        message.innerText = "Welcome To MZ VEER";
-    }
+if(text){
+
+    message.innerText = decodeURIComponent(text);
+
+}else{
+
+    message.innerText = "Welcome To MZ VEER";
+
+}
+
+function copyText(){
+
+    navigator.clipboard.writeText(message.innerText);
+
+    alert("Text Copied");
+
 }
